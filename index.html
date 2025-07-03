@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💰📊 Budgeting Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Budgeting Dashboard </h1>
+
+    <div class="input-section">
+      <input type="text" id="desc" placeholder="📝 Description">
+      <input type="number" id="amount" placeholder="💲 Amount">
+      <input type="date" id="date" value="">
+      <select id="type">
+        <option value="inflow">➕ Income</option>
+        <option value="outflow">➖ Expense</option>
+      </select>
+      <select id="category">
+        <option value="general">🏷️ General</option>
+        <option value="salary">💰 Salary</option>
+        <option value="business">💼 Business</option>
+        <option value="food">🍔 Food</option>
+        <option value="transport">🚗 Transport</option>
+        <option value="entertainment">🎬 Entertainment</option>
+        <option value="shopping">🛍️ Shopping</option>
+        <option value="health">🏥 Health</option>
+        <option value="education">📚 Education</option>
+      </select>
+      <button onclick="addTransaction()">✅ Add</button>
+    </div>
+
+    <div class="summary">
+      <h2>📊 Summary</h2>
+      <p>💰 Inflow: ₹<span id="inflow">0</span></p>
+      <p>💸 Outflow: ₹<span id="outflow">0</span></p>
+      <p>🧾 Net Balance: ₹<span id="net">0</span></p>
+      <p>📈 Status: <span id="status">Profit</span></p>
+      <p>💵 Savings Rate: <span id="savingsRate">0</span>%</p>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+      <canvas id="categoryChart"></canvas>
+    </div>
+
+    <div class="ai-section">
+      <h3>🤖 AI Financial Advisor</h3>
+      <p id="aiSuggestion">Start entering data to get personalized tips.</p>
+      <div id="spendingInsights"></div>
+      <div id="anomalyDetection"></div>
+    </div>
+    <div class="export-section">
+      <button onclick="downloadCSV()">📥 Export CSV</button>
+      <button onclick="clearLog()">🧹 Clear All</button>
+      <select id="timeFilter" onchange="filterTransactions()">
+        <option value="all">🕒 All Time</option>
+        <option value="month">📅 This Month</option>
+        <option value="week">🗓️ This Week</option>
+      </select>
+      <select id="categoryFilter" onchange="filterTransactions()">
+        <option value="all">🔍 All Categories</option>
+        <option value="general">🏷️ General</option>
+        <option value="salary">💰 Salary</option>
+        <option value="business">💼 Business</option>
+        <option value="food">🍔 Food</option>
+        <option value="transport">🚗 Transport</option>
+        <option value="entertainment">🎬 Entertainment</option>
+        <option value="shopping">🛍️ Shopping</option>
+        <option value="health">🏥 Health</option>
+        <option value="education">📚 Education</option>
+        <!-- Other categories -->
+      </select>
+    </div>
+
+    <div class="log">
+      <h2>🗂️ Transaction Log</h2>
+      <div class="log-controls">
+        <input type="text" id="searchDesc" placeholder="Search description..." onkeyup="searchTransactions()">
+        <select id="sortOrder" onchange="sortTransactions()">
+          <option value="dateDesc">Newest First</option>
+          <option value="dateAsc">Oldest First</option>
+          <option value="amountDesc">Amount (High to Low)</option>
+          <option value="amountAsc">Amount (Low to High)</option>
+        </select>
+      </div>
+      <ul id="logList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
