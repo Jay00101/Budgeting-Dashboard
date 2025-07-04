@@ -25,6 +25,7 @@
 
 The **Budgeting Dashboard** is an intuitive and comprehensive web-based application designed to empower individuals in managing their personal finances effectively. It provides a centralized platform for tracking income and expenses, visualizing financial trends through interactive charts, and gaining intelligent insights from an integrated AI Financial Advisor. Our goal is to simplify budgeting, making financial management accessible and insightful for everyone.
 
+![image_alt](https://github.com/Jay00101/Budgeting-Dashboard/blob/73217b6c9feaf8fea846ceae1bfd6694901e9e31/screenshots/ss1.jpg)
 ---
 
 ## ✨ Features
@@ -88,12 +89,14 @@ To get a local copy of the Budgeting Dashboard up and running on your machine, p
     * General financial advice based on your overall net balance and savings rate.
     * A breakdown of your top spending categories, helping you understand where your money is primarily directed.
     * Alerts for any significant spending anomalies detected by comparing current expenditures with previous periods, aiding in identifying unusual financial patterns.
+![image_alt](https://github.com/Jay00101/Budgeting-Dashboard/blob/73217b6c9feaf8fea846ceae1bfd6694901e9e31/screenshots/ss2.jpg)
 
 ### Transaction Log Management
 * **Search**: Use the "Search description..." input to quickly find specific transactions by keyword.
 * **Filter**: Apply filters by "Time Filter" (e.g., "📅 This Month", "🗓️ This Week") or "Category Filter" to narrow down the displayed transactions.
 * **Sort**: Organize your transaction log by "Sort Order" (e.g., "Newest First", "Amount (High to Low)").
 * **Delete**: To remove a transaction, click the "❌" icon next to it in the log. A confirmation prompt will appear.
+![image_alt](https://github.com/Jay00101/Budgeting-Dashboard/blob/73217b6c9feaf8fea846ceae1bfd6694901e9e31/screenshots/ss3.jpg)
 
 ### Data Export and Management
 * **Export CSV**: Click "📥 Export CSV" to download all your recorded transactions into a comma-separated values file, suitable for spreadsheet applications.
