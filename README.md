@@ -54,8 +54,6 @@ The **Budgeting Dashboard** is an intuitive and comprehensive web-based applicat
 
 ## 🚀 Getting Started
 
-To get a local copy of the Budgeting Dashboard up and running on your machine, please follow these straightforward steps.
-
 ### Prerequisites
 
 * A modern web browser (e.g., Chrome, Firefox, Edge, Safari). No additional software installations are required.
@@ -101,6 +99,7 @@ To get a local copy of the Budgeting Dashboard up and running on your machine, p
 ### Data Export and Management
 * **Export CSV**: Click "📥 Export CSV" to download all your recorded transactions into a comma-separated values file, suitable for spreadsheet applications.
 * **Clear All Data**: The "🧹 Clear All" button allows you to erase all transaction data from the dashboard. This action requires confirmation as it is irreversible.
+![image_alt](https://github.com/Jay00101/Budgeting-Dashboard/blob/3f368813b5139c52e6243d6cb2fedce41f74ce40/screenshots/ss4.jpg)
 
 ---
 
@@ -109,7 +108,6 @@ To get a local copy of the Budgeting Dashboard up and running on your machine, p
 The Budgeting Dashboard is under continuous development, with exciting future enhancements planned:
 
 * **Robust Offline Support with IndexedDB**: Full implementation of IndexedDB will replace `localStorage` for more scalable, reliable, and efficient data persistence, significantly improving offline usability.
-* **User Accounts & Cloud Synchronization**: Introduction of a backend system to enable user accounts, secure cloud storage for financial data, and seamless synchronization across multiple devices.
 * **Comprehensive Budgeting Goals**: Development of features allowing users to set specific spending limits for various categories and track their progress towards financial objectives.
 * **Automated Recurring Transactions**: A module to define and manage recurring income and expense entries, streamlining the tracking of regular financial activities.
 * **Advanced AI Financial Insights**: Further enhancement of AI algorithms to include predictive analytics, highly personalized financial recommendations, and more sophisticated, granular anomaly detection capabilities.
